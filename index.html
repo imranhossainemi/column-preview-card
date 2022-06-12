@@ -17,10 +17,12 @@
     }
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
-    .container{
-      max-width: 1440px;
-      min-height: 700px;
+    body{
+      min-width: 1440px;
       background: hsl(0, 0%, 95%);
+    }
+    .container{
+      margin: 0 auto;
       display: grid;
       place-content: center;
     }
@@ -128,8 +130,11 @@
 
     }
     @media only screen and (max-width:600px) {
+      body{
+        min-width: 375px;
+      }
       .container {
-        width: 375px;
+        width: 350px;
         display: flex;
       }
       .cards{
